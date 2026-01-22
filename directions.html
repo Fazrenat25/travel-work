@@ -1,0 +1,49 @@
+<!-- directions.html - продолжение структуры -->
+<section class="directions-map">
+    <h2>Глобальная карта направлений</h2>
+    <div class="map-filters">
+        <button class="filter-btn active" data-filter="visa-free">
+            <i class="fas fa-circle" style="color: green;"></i> Безвизовые страны
+        </button>
+        <button class="filter-btn" data-filter="visa-simple">
+            <i class="fas fa-circle" style="color: orange;"></i> Упрощенный визовый режим
+        </button>
+        <button class="filter-btn" data-filter="seasonal">
+            <i class="fas fa-circle" style="color: blue;"></i> Сезонные направления
+        </button>
+    </div>
+    
+    <!-- Здесь будет интерактивная карта -->
+    <div class="interactive-map">
+        <img src="images/world-map.svg" alt="Карта направлений" class="map-image">
+        <div class="map-marker" style="top: 40%; left: 55%;" data-country="turkey">
+            <div class="marker visa-free">TR</div>
+        </div>
+        <!-- Добавить остальные маркеры -->
+    </div>
+</section>
+
+<section class="regions-tabs">
+    <div class="tabs">
+        <button class="tab active" data-tab="russia">Россия</button>
+        <button class="tab" data-tab="visa-free-countries">Безвизовые направления</button>
+        <button class="tab" data-tab="asia">Азия и Ближний Восток</button>
+        <button class="tab" data-tab="africa">Африка</button>
+    </div>
+    
+    <div class="tab-content active" id="russia">
+        <div class="region-grid">
+            <div class="region-card">
+                <h3>Волга и Каспий</h3>
+                <ul>
+                    <li>Москва - Астрахань (12 дней)</li>
+                    <li>Казань - Волгоград (7 дней)</li>
+                    <li>Круизы по Каспийскому морю</li>
+                </ul>
+            </div>
+            <!-- Остальные регионы России -->
+        </div>
+    </div>
+    
+    <!-- Остальные вкладки -->
+</section>

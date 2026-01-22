@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Work - Путешествуй по миру. Работай на круизных лайнерах</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Навигация -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="logo">
+                <img src="images/logo.svg" alt="Travel Work Logo">
+                <span>Travel Work</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="directions.html">Направления</a></li>
+                <li><a href="cruises.html">Найти круиз</a></li>
+                <li><a href="career.html">Карьера на борту</a></li>
+                <li><a href="international-guide.html">Зарубежные круизы</a></li>
+                <li><a href="about.html">О платформе</a></li>
+            </ul>
+            <div class="nav-actions">
+                <button class="btn-secondary">Войти</button>
+                <button class="btn-primary">Регистрация</button>
+            </div>
+        </nav>
+    </header>
+
+<!-- Модальное окно входа -->
+<div class="modal-overlay" id="loginModal">
+    <div class="modal">
+        <button class="modal-close" id="closeModal">&times;</button>
+        
+        <h2>Вход в аккаунт</h2>
+        
+        <form id="loginForm">
+            <div class="form-group">
+                <label for="email">Email или телефон</label>
+                <input type="text" id="email" placeholder="example@mail.ru" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="password">Пароль</label>
+                <input type="password" id="password" placeholder="Введите пароль" required>
+            </div>
+            
+            <div class="modal-actions">
+                <button type="submit" class="btn-primary btn-login">
+                    <i class="fas fa-sign-in-alt"></i> Войти
+                </button>
+            </div>
+        </form>
+        
+        <div class="forgot-password">
+            <a href="#" id="forgotPassword">Забыли пароль?</a>
+        </div>
+        
+        <div class="social-login">
+            <p>Или войдите через:</p>
+            <div class="social-buttons">
+                <button class="social-btn google">
+                    <i class="fab fa-google"></i> Google
+                </button>
+                <button class="social-btn vk">
+                    <i class="fab fa-vk"></i> VK
+                </button>
+                <button class="social-btn telegram">
+                    <i class="fab fa-telegram"></i> Telegram
+                </button>
+            </div>
+        </div>
+        
+        <div class="register-link">
+            Нет аккаунта?
+            <a href="#" id="goToRegister">Зарегистрироваться</a>
+        </div>
+    </div>
+</div>
+
+<script src="js/main.js"></script>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Путешествуй по миру. Работай на круизных лайнерах. Открывай новые горизонты</h1>
+            <p class="subtitle">От Волги до Средиземного моря — твоя карьера в круизной индустрии начинается здесь</p>
+            
+            <!-- Форма поиска -->
+            <div class="search-form">
+                <div class="search-filters">
+                    <div class="filter-group">
+                        <label>География:</label>
+                        <select>
+                            <option value="all">Все направления</option>
+                            <option value="russia">Россия</option>
+                            <option value="international">Зарубежье</option>
+                        </select>
+                    </div>
+                    <div class="filter-group">
+                        <label>Тип круиза:</label>
+                        <select>
+                            <option value="all">Все типы</option>
+                            <option value="river">Речные</option>
+                            <option value="sea">Морские</option>
+                            <option value="expedition">Экспедиционные</option>
+                        </select>
+                    </div>
+                    <div class="filter-group">
+                        <label>Доступность:</label>
+                        <select>
+                            <option value="all">Все варианты</option>
+                            <option value="visa-free">Безвизовые направления</option>
+                            <option value="visa-support">С визовой поддержкой</option>
+                        </select>
+                    </div>
+                    <button class="btn-primary btn-search">
+                        <i class="fas fa-search"></i> Найти круиз
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Топ-5 направлений -->
+    <section class="top-destinations">
+        <h2>Топ-5 доступных зарубежных направлений</h2>
+        <div class="destinations-grid">
+            <div class="destination-card">
+                <div class="destination-number">1</div>
+                <h3>Турция</h3>
+                <p>Стамбул-Анталья-Бодрум</p>
+                <span class="badge visa-free">Безвизово</span>
+            </div>
+            <div class="destination-card">
+                <div class="destination-number">2</div>
+                <h3>ОАЭ</h3>
+                <p>Дубай-Абу-Даби</p>
+                <span class="badge visa-on-arrival">Виза по прибытии</span>
+            </div>
+            <div class="destination-card">
+                <div class="destination-number">3</div>
+                <h3>Сербия</h3>
+                <p>Речные круизы по Дунаю</p>
+                <span class="badge visa-free">Безвизово</span>
+            </div>
+            <div class="destination-card">
+                <div class="destination-number">4</div>
+                <h3>Танзания</h3>
+                <p>Занзибар</p>
+                <span class="badge e-visa">Виза онлайн</span>
+            </div>
+            <div class="destination-card">
+                <div class="destination-number">5</div>
+                <h3>Шри-Ланка</h3>
+                <p>Коломбо-Галле</p>
+                <span class="badge e-visa">Электронное разрешение</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Остальные разделы главной страницы -->
+    <!-- Особенности -->
+<section class="features">
+    <div class="feature">
+        <i class="fas fa-globe-europe"></i>
+        <h3>Глобальный охват</h3>
+        <p>Направления в 20+ странах мира</p>
+    </div>
+    <div class="feature">
+        <i class="fas fa-passport"></i>
+        <h3>Визовая поддержка</h3>
+        <p>Помощь с оформлением документов</p>
+    </div>
+    <div class="feature">
+        <i class="fas fa-briefcase"></i>
+        <h3>Трудоустройство</h3>
+        <p>500+ вакансий на круизных лайнерах</p>
+    </div>
+    <div class="feature">
+        <i class="fas fa-comments"></i>
+        <h3>Поддержка 24/7</h3>
+        <p>Русскоязычная служба поддержки</p>
+    </div>
+</section>
+
+<footer class="footer">
+    <div class="footer-content">
+        <div class="footer-section">
+            <h4>Travel Work</h4>
+            <p>Первая глобальная платформа для молодежи, объединяющая доступные круизные путешествия и карьерные возможности</p>
+        </div>
+        <div class="footer-section">
+            <h4>Контакты</h4>
+            <p>support@travelwork.ru</p>
+            <p>+7 (800) 555-35-35</p>
+        </div>
+        <div class="footer-section">
+            <h4>Юридическая информация</h4>
+            <p><small>Внимание! Информация о визовых требованиях актуальна на <span id="current-date"></span>. Рекомендуем уточнять детали в консульствах соответствующих стран перед бронированием.</small></p>
+        </div>
+    </div>
+</footer>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
